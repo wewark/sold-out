@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Soldout</Name>
+    <ProjectGuid>{69adb384-4a50-4a9e-b297-5813dc6c9501}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="includes\config.php" />
+    <Compile Include="includes\helpers.php" />
+    <Compile Include="includes\image.php" />
+    <Compile Include="public\add_item.php" />
+    <Compile Include="public\categories.php" />
+    <Compile Include="public\css\bootstrap.min.css" />
+    <Compile Include="public\css\styles.css" />
+    <Compile Include="public\deposite.php" />
+    <Compile Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="public\fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="public\history.php" />
+    <Compile Include="public\img\logo.png" />
+    <Compile Include="public\item.php" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\jquery-1.11.3.min.js" />
+    <Compile Include="public\logout.php" />
+    <Compile Include="public\js\scripts.js" />
+    <Compile Include="public\index.php" />
+    <Compile Include="public\login.php" />
+    <Compile Include="public\pp_upload.php" />
+    <Compile Include="public\profile.php" />
+    <Compile Include="public\register.php" />
+    <Compile Include="public\settings.php" />
+    <Compile Include="public\web.config" />
+    <Compile Include="config.json" />
+    <Compile Include="public\home.php" />
+    <Compile Include="views\add_item_form.php" />
+    <Compile Include="views\categories_view.php" />
+    <Compile Include="views\confirm_view.php" />
+    <Compile Include="views\deposite_form.php" />
+    <Compile Include="views\footer.php" />
+    <Compile Include="views\header.php" />
+    <Compile Include="views\history_view.php" />
+    <Compile Include="views\home_view.php" />
+    <Compile Include="views\item_view.php" />
+    <Compile Include="views\login_form.php" />
+    <Compile Include="views\pp_upload_view.php" />
+    <Compile Include="views\profile_view.php" />
+    <Compile Include="views\register_form.php" />
+    <Compile Include="views\settings_form.php" />
+    <Compile Include="views\view_cat_view.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="includes" />
+    <Folder Include="public\css" />
+    <Folder Include="public\fonts" />
+    <Folder Include="public\img" />
+    <Folder Include="public\js" />
+    <Folder Include="public" />
+    <Folder Include="views" />
+  </ItemGroup>
+</Project>
