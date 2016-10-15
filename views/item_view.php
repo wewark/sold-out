@@ -41,7 +41,7 @@
 		</tr>
 		<tr>
 			<td class="desc" colspan="2" style="font-size: 100%">
-				<a href="profile.php?id= <?= $item['user_id'] ?>">
+				<a href="profile.php?id=<?= $item['user_id'] ?>">
 					<?= CS50::query("SELECT * FROM users WHERE id = ?", $item["user_id"])[0]["full_name"] ?>
 				</a>
 				<br />
